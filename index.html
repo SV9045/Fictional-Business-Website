@@ -17,17 +17,19 @@
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
     />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Fictional Business</title>
   </head>
   <body id="home">
     <header class="hero">
-      <div class="navbar">
+      <div class="navbar top">
         <h1 class="logo pointer">
           <span class="text-primary">
-            <i class="fab fa-deviantart"></i> Fictional
-          </span>Business
+            <i class="fab fa-deviantart"></i> Fictional </span
+          >Business
         </h1>
         <nav id="navbar" role="navigation">
           <ul>
@@ -116,7 +118,7 @@
       </section>
 
       <!-- Solution Section -->
-      <section class="solutions flex-columns" id="solutions ">
+      <section class="solutions flex-columns" id="solutions">
         <div class="row">
           <div class="column">
             <div class="column-1">
@@ -142,7 +144,7 @@
         </div>
       </section>
 
-      <!-- Cases -->
+      <!-- Cases Section-->
       <section id="cases" class="cases flex-grid section-padding">
         <header class="section-header">
           <h2 class="our-work">This is What We Do</h2>
@@ -154,20 +156,36 @@
         </header>
         <div class="row">
           <div class="column">
-            <img src="./images/cases/cases1.jpg" alt="case one" />
-            <img src="./images/cases/cases2.jpg" alt="case two" />
+            <a href="images/cases/cases1.jpg" data-lightbox="cases" data-title="Case One">
+              <img src="images/cases/cases1.jpg" alt="case one" />
+            </a>
+            <a href="images/cases/cases2.jpg" data-lightbox="cases" data-title="Case Two">
+              <img src="images/cases/cases2.jpg" alt="case Two" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases/cases3.jpg" alt="case three" />
-            <img src="./images/cases/cases4.jpg" alt="case four" />
+            <a href="images/cases/cases3.jpg" data-lightbox="cases" data-title="Case Three">
+              <img src="images/cases/cases3.jpg" alt="case Three" />
+            </a>
+            <a href="images/cases/cases4.jpg" data-lightbox="cases" data-title="Case Four">
+              <img src="images/cases/cases4.jpg" alt="case four" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases/cases5.jpg" alt="case five" />
-            <img src="./images/cases/cases6.jpg" alt="case six" />
+            <a href="images/cases/cases5.jpg" data-lightbox="cases" data-title="Case Five">
+              <img src="images/cases/cases5.jpg" alt="case five" />
+            </a>
+            <a href="images/cases/cases6.jpg" data-lightbox="cases" data-title="Case Six">
+              <img src="images/cases/cases6.jpg" alt="case six" />
+            </a>
           </div>
           <div class="column">
-            <img src="./images/cases/cases7.jpg" alt="case seven" />
-            <img src="./images/cases/cases8.jpg" alt="case eight" />
+            <a href="images/cases/cases7.jpg" data-lightbox="cases" data-title="Case Seven">
+              <img src="images/cases/cases7.jpg" alt="case seven" />
+            </a>
+            <a href="images/cases/cases8.jpg" data-lightbox="cases" data-title="Case Eight">
+              <img src="./images/cases/cases8.jpg" alt="case eight" />
+            </a>
           </div>
         </div>
       </section>
@@ -177,7 +195,7 @@
         <div class="row">
           <div class="column">
             <div class="column-1">
-              <img src="./images/people.jpg" alt="people" />
+              <img src="./images/home/blog.jpg" alt="people" />
             </div>
           </div>
           <div class="column">
@@ -190,7 +208,7 @@
                 aperiam, itaque impedit id repellat a ipsam earum aliquam
                 nostrum corporis rerum! Ea, vel?
               </p>
-              <a href="##" class="btn btn-outline">
+              <a href="blog.html" class="btn btn-outline">
                 Read Our Blog
                 <i class="fas fa-chevron-right"></i>
               </a>
@@ -200,38 +218,36 @@
       </section>
 
       <!-- Team Section -->
-      <section>
-        <section id="team" class="team flex-grid">
-          <header class="section-header">
-            <h2 class="our-work">Who are We</h2>
-            <h2>Meet Our People</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
-              obcaecati?
-            </p>
-          </header>
-          <div class="grid-items">
-            <div>
-              <img src="./images/team/person1.jpg" alt="Sunny Vakil">
-              <h4>Sunny Vakil</h4>
-              <p>Front End Developer</p>
-            </div>
-            <div>
-              <img src="./images/team/person2.jpg" alt="Jasleen Hasria">
-              <h4>Jasleen Hasria</h4>
-              <p>Product Owner</p>
-            </div>
-            <div>
-              <img src="./images/team/person3.jpg" alt="Keyur Hindocha">
-              <h4>Keyur Hindocha</h4>
-              <p>Development Manager</p>
-            </div>
+      <section id="team" class="team section-padding">
+        <header class="section-header">
+          <h2 class="our-work">Who are We</h2>
+          <h2>Meet Our People</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            obcaecati?
+          </p>
+        </header>
+        <div class="flex-items">
+          <div>
+            <img src="./images/team/person1.jpg" alt="Sunny Vakil" />
+            <h4>Sunny Vakil</h4>
+            <p>Front End Developer</p>
           </div>
-        </section>
+          <div>
+            <img src="./images/team/person2.jpg" alt="Jasleen Hasria" />
+            <h4>Jasleen Hasria</h4>
+            <p>Product Owner</p>
+          </div>
+          <div>
+            <img src="./images/team/person3.jpg" alt="Keyur Hindocha" />
+            <h4>Keyur Hindocha</h4>
+            <p>Development Manager</p>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->
-      <section class="contact flex-columns" id="contact ">
+      <section class="contact flex-columns" id="contact">
         <div class="row">
           <div class="column">
             <div class="column-1">
@@ -244,17 +260,32 @@
               <form action="" class="callback-form">
                 <div class="form-cotrol">
                   <label for="Name"></label>
-                  <input type="text" name="name" id="name" placeholder="Name">
+                  <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
                 <div class="form-cotrol">
                   <label for="Email"></label>
-                  <input type="email" name="email" id="email" placeholder="Enter Email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter Email"
+                  />
                 </div>
                 <div class="form-cotrol">
                   <label for="phone"></label>
-                  <input type="tel" name="phone" id="phone" placeholder="Enter Phone">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter Phone"
+                  />
                 </div>
-                <input type="submit" value="submit" id="submit" class="btn btn-primary">
+                <input
+                  type="submit"
+                  value="submit"
+                  id="submit"
+                  class="btn btn-primary"
+                />
               </form>
             </div>
           </div>
@@ -272,7 +303,12 @@
       <p>
         Copyright, &copy; FictionalBusiness
       </p>
-    </footer> 
+    </footer>
     <script src="js/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"></script>
+    <script src="js/lightbox.min.js"></script>
   </body>
 </html>

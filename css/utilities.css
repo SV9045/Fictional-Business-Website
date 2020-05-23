@@ -72,6 +72,15 @@
   gap: 1rem;
 }
 
+/* Flex items */
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
 /* Flex Columns */
 .flex-columns .row{
   display: flex;
@@ -116,4 +125,13 @@
   max-width: 25%;
   flex: 25%;
   padding:0 0.4rem;
+}
+
+/* Team */
+
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
