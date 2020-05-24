@@ -197,6 +197,10 @@ p {
   padding: 2rem;
 }
 
+img {
+  width: 100%;
+}
+
 .team img {
   border-radius: 50%;
 }
@@ -312,10 +316,18 @@ footer .social > * {
   .team img {
     width: 70%;
   }
+
+  .team .grid-items {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 @media (max-width: 500px) {
   .grid-items {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team .grid-items {
+    grid-template-columns: repeat(1,1fr);
   }
 }

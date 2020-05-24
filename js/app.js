@@ -6,5 +6,5 @@ function fixNav() {
     navabr.classList.remove('top');
   } else {
     navabr.classList.add('top')
-  }
+  } 
 }
